@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Photo Album</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Smart Photo Album</h1>
+        </header>
+        
+        <section class="search-section">
+            <h2>Search Photos</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search photos (e.g., 'Show me dogs')">
+                <button id="search-button">Search</button>
+            </div>
+        </section>
+        
+        <section class="results-section">
+            <h2>Results</h2>
+            <div id="results-container" class="results-grid"></div>
+        </section>
+        
+        <section class="upload-section">
+            <h2>Upload Photo</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="file-upload">Select Image:</label>
+                    <input type="file" id="file-upload" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="custom-labels">Custom Labels (comma-separated):</label>
+                    <input type="text" id="custom-labels" placeholder="e.g., vacation, family, mountains">
+                </div>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+    </div>
+    
+    <!-- We'll import the AWS SDK here if needed -->
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.874.0.min.js"></script>
+    
+</body>
+</html>

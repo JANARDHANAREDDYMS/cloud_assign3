@@ -1,0 +1,12 @@
+{
+    "name": "index-photos",
+    "version": "1.0.0",
+    "description": "Lambda function to index photos using Rekognition",
+    "main": "index.js",
+    "dependencies": {
+        "@aws-sdk/credential-provider-node": "^3.787.0",
+        "@opensearch-project/opensearch": "^1.2.0",
+        "aws-opensearch-connector": "^1.2.0",
+        "aws-sdk": "^2.1692.0"
+    }
+}
